@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  .card {
+    width: 250px;
+    height: 347px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
