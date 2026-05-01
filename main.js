@@ -112,3 +112,18 @@ desserts.forEach((item) => {
         </div>
       </div>`;
 });
+
+//
+// const btn = document.querySelector(".btn");
+
+// btn.addEventListener("click", () => {
+//     console.log("works")
+// })
+
+// btn.addEventListener("click", log);
+
+// function log() {
+//   console.log("works");
+// }
+
+// log() - sul gaushvi
