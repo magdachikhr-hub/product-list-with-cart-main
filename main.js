@@ -101,9 +101,12 @@ const desserts = [
 ];
 
 const productHtml = document.querySelector(".products");
+const filterBtn = document.querySelector(".filter_btn");
 
-desserts.forEach((item) => {
-  productHtml.innerHTML += `<div class="card">
+function render(array) {
+  productHtml.innerHTML = "";
+  array.forEach((item) => {
+    productHtml.innerHTML += `<div class="card">
         <img src="${item.image.desktop}" alt="" />
         <div class="wrapper">
           <span class="category">${item.category}</span>
@@ -111,6 +114,17 @@ desserts.forEach((item) => {
           <span class="price">${item.price}</span>
         </div>
       </div>`;
+  });
+}
+
+render(desserts);
+
+filterBtn.addEventListener("click", () => {
+  const filteredArr = desserts.filter((dessert) => {
+    return dessert.price < 5;
+  });
+  render(filteredArr);
+  //   console.log(filteredArr);
 });
 
 //
