@@ -102,6 +102,7 @@ const desserts = [
 
 const productHtml = document.querySelector(".products");
 const filterBtn = document.querySelector(".filter_btn");
+const resetBtn = document.querySelector(".reset");
 
 function render(array) {
   productHtml.innerHTML = "";
@@ -127,6 +128,9 @@ filterBtn.addEventListener("click", () => {
   //   console.log(filteredArr);
 });
 
+resetBtn.addEventListener("click", () => {
+  render(desserts);
+});
 //
 // const btn = document.querySelector(".btn");
 
